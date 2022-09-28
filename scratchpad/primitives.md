@@ -10,6 +10,26 @@ This document is my initial thoughts on how to develop standard (ideal: universa
 
 - real thing =>
   - unique characteristics: **what** makes it non-fungible?
+    - Categorically: Geocoding Strategies / Location Encoding Systems
+      - e.g. GIS
+    - How to think about it?
+    - Boundaries (outline / convex hull)
+      - Examples
+        - Lat, Lng
+          - Granularity = good and bad
+          - Good = exact
+          - Bad = difficult to measure exactness
+        - Grids
+          - https://what3words.com/
+            - proprietary and protected
+    - Point / Points
+      - distance from a point
+      - all points for shape (with an implied boundary)
+      - **Deterministically represent each point on-chain?**
+        - Starting point: string of {lng,lat} pairs that make up the boundary -> everything within
+          - Pros: exact
+          - Cons: Conflict resolution - costly to compute overlaps?
+
   - who is the steward of the asset?
     - structure is discrete
     - provenance = chronologically ascending sorted list of stewardship structures
